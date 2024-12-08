@@ -1,5 +1,5 @@
 import StudentManagement.*;
-
+import java.util.List;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -69,5 +69,53 @@ public class Main {
         for (Student str : students){
             System.out.println(str);
         }
+//                System.out.println("*************** Binary Search Student by ID ***************");
+//                int studentId = 1001; // Example ID
+//                int index = binarySearchStudentById(students, studentId);
+//                String searchResult = (index != -1)
+//                        ? "Found Student: " + students.get(index)
+//                        : "ID not found: " + studentId;
+//                System.out.println(searchResult);
+//
+//                // Sorting and Printing
+//                sortAndPrintStudents(students, "ID");
+//                sortAndPrintStudents(students, "Full Name");
+//                sortAndPrintStudents(students, "Mark");
+//            }
+//
+//            private static int binarySearchStudentById(List<Student> students, int id) {
+//                // Implement binary search logic
+//                return students.stream()
+//                        .filter(student -> Student.getId() == id)
+//                        .findFirst()
+//                        .map(students::indexOf)
+//                        .orElse(-1);
+//            }
+//
+//            private static void sortAndPrintStudents(List<Student> students, String criterion) {
+//                if (students.isEmpty()) {
+//                    System.out.println("No students to sort.");
+//                    return;
+//                }
+//
+//                switch (criterion) {
+//                    case "ID":
+//                        System.out.println("Sorting by ID...");
+//                        students.sort(Student.IdStudentComparator);
+//                        break;
+//                    case "Full Name":
+//                        System.out.println("Sorting by Full Name...");
+//                        students.sort(Student.FullNameStduComparator);
+//                        break;
+//                    case "Mark":
+//                        System.out.println("Sorting by Mark...");
+//                        students.sort(Student.MarkStduComparator);
+//                        break;
+//                    default:
+//                        System.out.println("Unknown sorting criterion: " + criterion);
+//                        return;
+//                }
+//                System.out.println("Students After Sort: " + students);
+
     }
 }
